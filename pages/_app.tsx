@@ -4,8 +4,6 @@ import Head from "next/head";
 import "semantic-ui-css/semantic.min.css";
 import "../global.css";
 
-import CartProvider from "@store/Cart";
-
 // export const reportWebVitals = (metric) => {
 //   console.log('reportWebVitals:metric:', metric);
 // }
@@ -26,9 +24,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				{/* stylesheets */}
 				{/* scripts */}
 			</Head>
-			<CartProvider>
-				<Component {...pageProps} />
-			</CartProvider>
+			<Component {...pageProps} />
 		</>
 	);
 };
